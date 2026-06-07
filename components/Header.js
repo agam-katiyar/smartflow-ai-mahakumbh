@@ -22,7 +22,7 @@ export default function Header({ view, setView, criticalZones }) {
             </div>
             <div>
               <h1 className="text-lg font-bold gradient-text leading-none">SmartFlow AI</h1>
-              <p className="text-xs text-gray-400 leading-none mt-0.5">Mahakumbh 2028 Mobility Intelligence</p>
+              <p className="text-xs text-gray-400 leading-none mt-0.5">Simhastha Kumbh 2028 · Ujjain, MP</p>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ export default function Header({ view, setView, criticalZones }) {
             </div>
             <div className="flex items-center gap-2 glass-card px-3 py-1.5 rounded-lg">
               <div className="w-2 h-2 rounded-full bg-sf-emerald animate-pulse"></div>
-              <span className="text-xs text-gray-300">LIVE · Prayagraj IST {time}</span>
+              <span className="text-xs text-gray-300">LIVE · Ujjain IST {time}</span>
             </div>
           </div>
 

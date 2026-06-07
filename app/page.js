@@ -17,10 +17,10 @@ export default function Home() {
   const [stats, setStats] = useState(LIVE_STATS)
   const [incidents, setIncidents] = useState(INCIDENTS)
   const [alerts, setAlerts] = useState([
-    '⚠️ CRITICAL: Sangam Sector at 92% capacity — use alternate routes',
-    '🔴 Gate 1 temporarily closed for crowd management — use Gate 2 or Gate 3',
-    '🚌 Gold Line shuttle frequency increased to 3 minutes due to high demand at Parking Zone B',
-    '✅ Naini Bridge congestion reducing — down from 90% to 85%',
+    '⚠️ CRITICAL: Ram Ghat at 92% capacity — pilgrims redirected to Triveni Ghat',
+    '🔴 Mahakaleshwar Temple entry temporarily restricted — use east gate for Darshan',
+    '🚌 Gold Line shuttle frequency increased to 3 minutes — Dewas Naka to Triveni Ghat',
+    '✅ Shipra snan at Siddhawar Ghat recommended — only 38% density, no waiting',
     '📢 Special bathing muhurta at 6 AM tomorrow — arrive early via Arail or Ram Ghat',
   ])
   const [view, setView] = useState('dashboard') // 'dashboard' | 'pilgrim'
@@ -115,7 +115,7 @@ export default function Home() {
       <footer className="border-t border-sf-border mt-12 py-6 text-center">
         <p className="text-gray-500 text-sm">
           <span className="gradient-text font-semibold">SmartFlow AI</span>
-          {' '}— Intelligent Mobility System for Mahakumbh 2028 | Prayagraj, India
+          {' '}— Intelligent Mobility System for Simhastha Kumbh 2028 | Ujjain, Madhya Pradesh
         </p>
         <p className="text-gray-600 text-xs mt-1">
           Powered by Gemini AI · Real-time crowd analytics · 18 active monitoring zones
