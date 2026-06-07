@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-sf-bg: #0A0A0F;
+  --color-sf-surface: #12121A;
+  --color-sf-card: #1A1A26;
+  --color-sf-border: #2A2A3E;
+  --color-sf-gold: #E8A937;
+  --color-sf-saffron: #FF6B00;
+  --color-sf-emerald: #05C77E;
+  --color-sf-crimson: #FF3B30;
+  --color-sf-blue: #3B82F6;
+  --color-sf-purple: #8B5CF6;
+
+  --font-sans: 'Outfit', 'Inter', system-ui, sans-serif;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-slide-up: slideUp 0.5s ease-out;
+  --animate-fade-in: fadeIn 0.3s ease-out;
+
+  --keyframes-slideUp: {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  };
+  --keyframes-fadeIn: {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  };
+}
 
 :root {
   --sf-bg: #0A0A0F;

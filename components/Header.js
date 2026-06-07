@@ -1,15 +1,15 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Header({ view, setView, criticalZones }) {
-  const [time, setTime] = useState(new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit' }))
+  const [time, setTime] = useState('')
 
-  // Update clock every minute
-  if (typeof window !== 'undefined') {
-    setInterval(() => {
-      setTime(new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit' }))
-    }, 60000)
-  }
+  useEffect(() => {
+    const fmt = () => new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit' })
+    setTime(fmt())
+    const t = setInterval(() => setTime(fmt()), 60000)
+    return () => clearInterval(t)
+  }, [])
 
   return (
     <header className="glass-panel border-b border-sf-border sticky top-0 z-40">
