@@ -73,17 +73,17 @@ export default function CongestionMap({ zones }) {
             </defs>
             <rect width="800" height="500" fill="url(#grid)"/>
 
-            {/* Rivers */}
-            <path d="M 0 320 Q 100 300 200 310 Q 350 290 450 280 Q 550 270 650 260 Q 750 250 800 240"
-              fill="none" stroke="rgba(59,130,246,0.4)" strokeWidth="20" strokeLinecap="round"/>
-            <path d="M 0 320 Q 100 300 200 310 Q 350 290 450 280 Q 550 270 650 260 Q 750 250 800 240"
-              fill="none" stroke="rgba(59,130,246,0.15)" strokeWidth="35" strokeLinecap="round"/>
-            <text x="340" y="295" fill="rgba(59,130,246,0.5)" fontSize="10" fontFamily="Outfit">Ganga-Yamuna Sangam</text>
+            {/* Shipra River */}
+            <path d="M 200 50 Q 220 150 240 200 Q 260 270 280 320 Q 300 380 310 460"
+              fill="none" stroke="rgba(59,130,246,0.4)" strokeWidth="22" strokeLinecap="round"/>
+            <path d="M 200 50 Q 220 150 240 200 Q 260 270 280 320 Q 300 380 310 460"
+              fill="none" stroke="rgba(59,130,246,0.15)" strokeWidth="38" strokeLinecap="round"/>
+            <text x="180" y="200" fill="rgba(59,130,246,0.6)" fontSize="11" fontFamily="Outfit" transform="rotate(-75, 240, 220)">Shipra (Kshipra) River</text>
 
             {/* Zone circles — rendered only after client mount */}
             {mounted && zones.map((zone) => {
-              const svgX = ((zone.lng - 81.82) / 0.12) * 700 + 50
-              const svgY = ((25.52 - zone.lat) / 0.12) * 440 + 30
+              const svgX = ((zone.lng - 75.74) / 0.08) * 650 + 75
+              const svgY = ((23.22 - zone.lat) / 0.07) * 430 + 30
               const radius = zone.status === 'critical' ? 22 : zone.status === 'high' ? 18 : 15
               const color = DENSITY_COLORS[zone.status]?.bg || '#05C77E'
               const isSelected = selected?.id === zone.id

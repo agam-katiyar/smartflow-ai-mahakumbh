@@ -5,12 +5,12 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
-  title: 'SmartFlow AI – Mahakumbh Intelligent Mobility System',
-  description: 'AI-powered crowd routing, congestion prediction, and smart parking allocation for Mahakumbh 2028. Real-time mobility intelligence for 450 million pilgrims.',
-  keywords: 'Mahakumbh, crowd management, smart routing, AI mobility, traffic management, Prayagraj',
+  title: 'SmartFlow AI – Simhastha Kumbh 2028 Intelligent Mobility System',
+  description: 'AI-powered crowd routing, congestion prediction, and smart parking for Simhastha Mahakumbh 2028, Ujjain. Real-time mobility intelligence on the banks of Shipra River.',
+  keywords: 'Simhastha Kumbh, Ujjain Mahakumbh, crowd management, smart routing, AI mobility, Shipra River, Madhya Pradesh, Mahakaleshwar',
   openGraph: {
-    title: 'SmartFlow AI – Mahakumbh Intelligent Mobility System',
-    description: 'AI-powered crowd routing and congestion prediction for Mahakumbh 2028',
+    title: 'SmartFlow AI – Simhastha Kumbh 2028 Intelligent Mobility',
+    description: 'AI-powered crowd routing and congestion prediction for Simhastha Kumbh 2028, Ujjain MP',
   },
 }
 
