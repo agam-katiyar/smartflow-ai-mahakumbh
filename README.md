@@ -59,12 +59,14 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+Deployed Application: [https://smartflow-ai-mahakumbh.vercel.app/](https://smartflow-ai-mahakumbh.vercel.app/)
+
 ---
 
 ## 🔑 Environment Variables
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=........
 ```
 
 Get your free API key at [aistudio.google.com](https://aistudio.google.com/app/apikey)
@@ -80,7 +82,7 @@ Get your free API key at [aistudio.google.com](https://aistudio.google.com/app/a
 ---
 
 ## 🏆 Hackathon
-Built for **Mahakumbh Innovation Hackathon 2028** — Transportation & Mobility Management track.  
+Built for **Mahakumbh Innovation Hackathon 2026** — Transportation & Mobility Management track.  
 Organized by Expert Hire in collaboration with VIT Bhopal.
 
 ---
